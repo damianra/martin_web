@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %} 
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Casa de comidas lo de martin, Sandwich, pizzas empanadas, etc. la mejor calidad." />
+        <meta name="author" content="" />
+        <title>{{shop_data.name}}</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'shopapp/assets/favicon.ico' %}" />
+        <!-- Bootstrap icons-->
+        <link href="{% static 'shopapp/css/font/bootstrap-icons.css' %}" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'shopapp/css/styles.css' %}" rel="stylesheet" />
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+        </style> 
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        </style> 
+    </head>
+    <body>
+        <!-- Navigation-->
+
+
+
+        {% block base %}
+        {% endblock %}
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="{% static 'shopapp/js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'shopapp/js/scripts.js' %}"></script>
+        <script src="{% static 'shopapp/js/jquery.js' %}"></script>
+
+        <script src="{% static 'shopapp/js/cart_script.js' %}"></script>
+
+    </body>
+</html>

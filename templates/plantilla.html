@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+{% block base %}
+<!-- Header-->
+<header class="header-img py-5">
+                <!-- Social Buttons-->
+                <div class="container">
+                    <nav class="sociales text-center">
+                        <ul class="text-center">
+                            <li>
+                                <a class="social-btn p-2" href="https://api.whatsapp.com/send?phone={{shop_data.whatsapp}}" target="_blank">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-btn p-2" href="{{shop_data.instagram}}" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-btn p-2" href="{{shop_data.facebook}}" target="_blank">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-btn p-2" href="mailto:{{shop_data.mail}}" target="_blank">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center">
+            <img src="{{shop_data.logo.url}}" alt="">
+            <p class="lead fw-normal text-white mb-0">Pizzas, Empanadas, Hamburguesas, etc.</p>
+        </div>
+    </div>
+</header>
+{% block content %}
+
+{% endblock %}
+<a id="cart_button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn-wsp" target="_blank">
+    <i class="bi bi-clipboard-check"></i>
+</a>
+
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; damianra 2021</p></div>
+</footer>
+
+{% endblock %}
